@@ -17,7 +17,11 @@ set-executionpolicy remotesigned
 (venv) PS C:\opt\simple_flask_app> flask run
 
 -- pythonanywhere 
+mkdir -p opt/simple_flask_app
+cd opt/simple_flask_app
+mkvirtualen simple_flask_app -p python3.6
+
 # activate
-work simple_flask_app
+workon simple_flask_app
 deactivate
 
