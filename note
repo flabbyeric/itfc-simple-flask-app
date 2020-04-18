@@ -16,6 +16,8 @@ set-executionpolicy remotesigned
 (venv) PS C:\opt\simple_flask_app> $env:FLASK_APP="hello.py"
 (venv) PS C:\opt\simple_flask_app> flask run
 
+set FLASK_APP=hello.py
+
 -- pythonanywhere 
 mkdir -p opt/simple_flask_app
 cd opt/simple_flask_app
