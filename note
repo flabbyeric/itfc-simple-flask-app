@@ -1,0 +1,23 @@
+-- Windows 10
+python 3.6.4
+C:\opt\simple_flask_app
+python -m venv venv
+#activate
+.\venv\Scripts\activate
+#deactive
+deactivate
+pip install Flask==1.0.2
+
+### PS
+Get-ExcuctionPolicy
+set-executionpolicy remotesigned
+###
+
+(venv) PS C:\opt\simple_flask_app> $env:FLASK_APP="hello.py"
+(venv) PS C:\opt\simple_flask_app> flask run
+
+-- pythonanywhere 
+# activate
+work simple_flask_app
+deactivate
+
