@@ -27,3 +27,31 @@ mkvirtualen simple_flask_app -p python3.6
 workon simple_flask_app
 deactivate
 
+
+#DB setup
+mysql -uroot -pTest123
+create database counter;
+create user 'counter_app'@'%' identified by 'mypassword';
+flush privileges;
+
+mysql -ucounter_app -pmypassword
+
+CREATE TABLE Customers (
+    CustomerID int NOT NULL AUTO_INCREMENT,
+    CustomerName varchar(255),
+    ContactName varchar(255),
+    Address varchar(255),
+    City varchar(255),
+	PostalCode varchar(255),
+    Country varchar(255),
+	PRIMARY KEY (CustomerID)
+);
+
+
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+select * from customers;
+
+
+
+
